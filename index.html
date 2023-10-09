@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lavazza - The Italian Espresso since 1895 | POS System</title>
+    <link rel="stylesheet" href="./assests/bootstrap/bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assests/css/normalize.css">
+    <link rel="stylesheet" href="assests/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/assests/images/favicon.ico">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <header id="header1">
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="/assests/images/lavazza.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    LAVAZZA
+                </a>
+
+                <ul class="nav nav-underline">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="customer.html">Customer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="item.html">Item</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="order.html">Order</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+<!--    <p class="h2">Home</p>-->
+    <img src="./assests/images/home.png" class="img-fluid" alt="..." id="imghome">
+
+    <a href="customer.html"><button type="button" class="btn btn-outline-light" id="btnCus" data-aos="flip-left"
+                                    data-aos-easing="ease-out-cubic"
+                                    data-aos-duration="1000">MANAGE CUSTOMER</button></a>
+
+    <a href="item.html"><button type="button" class="btn btn-outline-light" id="btnItem" data-aos="flip-left"
+                                data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000">MANAGE ITEM</button></a>
+
+    <a href="order.html"><button type="button" class="btn btn-outline-light" id="btnOrder" data-aos="flip-left"
+                                 data-aos-easing="ease-out-cubic"
+                                 data-aos-duration="3000">MANAGE ORDER</button></a>
+
+<!--    <button id="btn1"style="position:relative; top: 0; bottom: 0; margin: auto; z-index: 999999;">Btn1</button>-->
+
+<!--    <img src="./assests/images/lavazza.png" alt="" id="img1">-->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assests/js/snow3d.js"></script>
+
+    <script>
+        AOS.init();
+
+        // // Get a reference to the button element by its ID
+        // var btn1 = document.getElementById('btn1');
+        //
+        // // Add a click event listener to the button
+        // btn1.addEventListener('click', function() {
+        //     // Run the snow3d.js script when the button is clicked
+        //     runSnow3dScript();
+        // });
+        //
+        // // Define a function to run the snow3d.js script
+        // function runSnow3dScript() {
+        //     // Include your code from snow3d.js here
+        //     // For example:
+        //     // snow3dInit();
+        // }
+
+    </script>
+
+</body>
+</html>

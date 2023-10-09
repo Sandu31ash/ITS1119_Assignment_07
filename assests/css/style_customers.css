@@ -1,0 +1,82 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+    background-color: #163052;
+}
+
+#imgCus{
+    position: absolute;
+    width: 30vw;
+    left: 30vw;
+    top: 12vh;
+}
+
+#tb1{
+    position: absolute;
+    /*top: 50vh;*/
+    bottom: 0;
+    width: 74vw;
+    right: 1vw;
+}
+
+#form1{
+    position: absolute;
+    bottom: 1vw;
+    left: 1vw;
+    width: 18vw;
+}
+
+#frame{
+    position: relative;
+    width: 23vw;
+    height: 80vh;
+    border: 1px solid white;
+    padding: 0.5vw;
+    top: 10vh;
+}
+
+.form-floating{
+    height: 7vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+button{
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/*#divBtn{*/
+/*    position: absolute;*/
+/*    !*display: inline;*!*/
+/*    width: fit-content;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    margin: auto;*/
+/*}*/
+
+#divTb{
+    position: relative;
+    top: 10vh;
+}
