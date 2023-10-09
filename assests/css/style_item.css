@@ -33,7 +33,7 @@ body{
     top: 10vh;
 }
 
-button{
+#itemBtn>button{
     position: relative;
     left: 0;
     right: 0;
@@ -57,31 +57,32 @@ button{
     left: 2vw;
 }
 
-form{
+#itemForm{
     position: relative;
     top: 10vh;
+    padding: 0;
 }
 
 button{
     /*padding: 5vw;*/
 }
 
-#code{
+#code2{
     color: white;
     background-color: transparent;
 }
 
-#item{
+#item2{
     color: white;
     background-color: transparent;
 }
 
-#price{
+#price2{
     color: white;
     background-color: transparent;
 }
 
-#qty{
+#qty2{
     color: white;
     background-color: transparent;
 }
