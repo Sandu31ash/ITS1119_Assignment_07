@@ -16,8 +16,8 @@ form{
 }
 
 #tb3{
-    position: relative;
-    top: 20vh;
+    position: absolute;
+    top: 70vh;
 }
 
 .form-control{

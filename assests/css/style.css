@@ -25,6 +25,8 @@ body{
     /*top: 16vh;*/
     top: 0;
     bottom: 0;
+    left: 0;
+    right: 0;
     margin: auto;
     opacity: 60%;
 }
@@ -104,6 +106,7 @@ body{
     }
 }
 
+
 #con2{
     position: relative;
     top: 108vh;
@@ -116,10 +119,10 @@ body{
 
 #con3{
     position: relative;
-    top: 120vh;
+    top: 127vh;
 }
 
 #con4{
     position: relative;
-    top: 140vh;
+    top: 155vh;
 }
