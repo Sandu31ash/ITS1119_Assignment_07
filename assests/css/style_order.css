@@ -15,9 +15,9 @@ form{
     height: 25vh;
 }
 
-table{
+#tb3{
     position: relative;
-    top: 12vh;
+    top: 20vh;
 }
 
 .form-control{
@@ -39,6 +39,11 @@ table{
     left: 5vw;
 }
 
+label{
+    color: white;
+    background-color: transparent;
+}
+
 /*#floatingId{*/
 /*    background-color: transparent;*/
 /*}*/
@@ -56,10 +61,7 @@ table{
 /*}*/
 
 
-label{
-    color: white;
-    background-color: transparent;
-}
+
 
 /*.row{*/
 /*    position: relative;*/

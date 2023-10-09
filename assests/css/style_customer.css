@@ -33,7 +33,7 @@ body{
     top: 10vh;
 }
 
-button{
+#cusBtn>button{
     position: relative;
     left: 0;
     right: 0;
@@ -51,27 +51,24 @@ button{
 /*    margin: auto;*/
 /*}*/
 
-#divTb{
+#cusTb{
     position: relative;
     top: 18vh;
     left: 2vw;
 }
 
-form{
+#cusForm{
     position: relative;
     top: 10vh;
+    padding: 0;
 }
 
-button{
-    /*padding: 5vw;*/
-}
-
-#id1{
+#cusId1{
     color: white;
     background-color: transparent;
 }
 
-#name{
+#name1{
     color: white;
     background-color: transparent;
 }
@@ -98,4 +95,15 @@ label{
 
 input{
     color: white;
+    width: 10vw;
+}
+
+.container>#imgCus{
+    opacity: 0;
+}
+
+@media all and (max-width: 768px){
+    #imgCus{
+        opacity: 0;
+    }
 }
