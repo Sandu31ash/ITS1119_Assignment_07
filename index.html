@@ -240,7 +240,7 @@
     <div class="row" id="orderRow">
         <!--        <div id="frame">-->
         <div class="col col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-            <form action="" method="post" target="_blank">
+            <form action="" method="post" target="_blank" id="orderForm">
                 <h6 style="color: white">Invoice details</h6>
                 <div class="form-floating mb-2">
                     <input type="text" class="form-control" id="code3" placeholder="Order code">
@@ -404,6 +404,10 @@
         //     // snow3dInit();
         // }
 
+        $("#con2").css("display", "none");
+        $("#con3").css("display", "none");
+        $("#con4").css("display", "none");
+
         $("#homeSec").on('click' , ()=>{
             $("#con2").css("display", "none");
             $("#con3").css("display", "none");
@@ -415,6 +419,7 @@
             $("#con1").css("display", "none");
             $("#con3").css("display", "none");
             $("#con4").css("display", "none");
+            $("#con2").css("top", "0");
             $("#con2").css("display", "block");
         });
 
@@ -422,6 +427,7 @@
             $("#con1").css("display", "none");
             $("#con2").css("display", "none");
             $("#con4").css("display", "none");
+            $("#con3").css("top", "0");
             $("#con3").css("display", "block");
         });
 
@@ -429,6 +435,7 @@
             $("#con1").css("display", "none");
             $("#con2").css("display", "none");
             $("#con3").css("display", "none");
+            $("#con4").css("top", "0");
             $("#con4").css("display" , "block");
         });
 

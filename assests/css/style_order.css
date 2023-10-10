@@ -6,9 +6,8 @@ body{
 form{
     position: relative;
     top: 8vh;
-    padding-left: 5vw;
-    padding-right: 5vw;
-
+    /*padding-left: 5vw;*/
+    /*padding-right: 5vw;*/
 }
 
 #row1{
