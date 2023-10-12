@@ -28,7 +28,7 @@
                 <ul class="nav nav-underline">
                     <li class="nav-item">
 <!--                        Home-->
-                        <a class="nav-link active" aria-current="page" id="homeSec">Home</a>
+                        <a class="nav-link" aria-current="page" id="homeSec">Home</a>
                     </li>
                     <li class="nav-item">
 <!--                        Customer-->
@@ -48,21 +48,20 @@
         </nav>
     </header>
 
-
     <div class="container" id="con1">
 
         <!--    <p class="h2">Home</p>-->
         <img src="./assests/images/home.png" class="img-fluid" alt="..." id="imghome">
 
-        <a href="customer.html"><button type="button" class="btn btn-outline-light" id="btnCus" data-aos="flip-left"
+        <a><button type="button" class="btn btn-outline-light" id="btnCus" data-aos="flip-left"
                                         data-aos-easing="ease-out-cubic"
                                         data-aos-duration="1000">MANAGE CUSTOMER</button></a>
 
-        <a href="item.html"><button type="button" class="btn btn-outline-light" id="btnItem" data-aos="flip-left"
+        <a><button type="button" class="btn btn-outline-light" id="btnItem" data-aos="flip-left"
                                     data-aos-easing="ease-out-cubic"
                                     data-aos-duration="2000">MANAGE ITEM</button></a>
 
-        <a href="order.html"><button type="button" class="btn btn-outline-light" id="btnOrder" data-aos="flip-left"
+        <a><button type="button" class="btn btn-outline-light" id="btnOrder" data-aos="flip-left"
                                      data-aos-easing="ease-out-cubic"
                                      data-aos-duration="3000">MANAGE ORDER</button></a>
 
@@ -123,27 +122,27 @@
                     <tbody id="stu_tBody">
                     <tr>
                         <td scope="row">C001</td>
-                        <td>Mark</td>
-                        <td>@mdo</td>
-                        <td>Otto</td>
+                        <td>Mario</td>
+                        <td>00395458752361</td>
+                        <td>Torino</td>
                     </tr>
                     <tr>
                         <td scope="row">C002</td>
-                        <td>Jacob</td>
-                        <td>@fat</td>
-                        <td>Thornton</td>
+                        <td>Pinto</td>
+                        <td>00393875846512</td>
+                        <td>Alba</td>
                     </tr>
                     <tr>
                         <td scope="row">C003</td>
-                        <td>Larry</td>
-                        <td>@twitter</td>
-                        <td>USA</td>
+                        <td>Luca</td>
+                        <td>00393125465875</td>
+                        <td>Milano</td>
                     </tr>
                     <tr>
                         <td scope="row">C004</td>
-                        <td>Tom</td>
-                        <td>@twitter</td>
-                        <td>USA</td>
+                        <td>Antonio</td>
+                        <td>00394258765422</td>
+                        <td>Elba</td>
                     </tr>
                     </tbody>
                 </table>
@@ -205,26 +204,26 @@
                     <tr>
                         <td scope="row">I001</td>
                         <td>Latte</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
+                        <td>2000</td>
+                        <td>500</td>
                     </tr>
                     <tr>
                         <td scope="row">I002</td>
                         <td>Cappucino</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
+                        <td>1500</td>
+                        <td>450</td>
                     </tr>
                     <tr>
                         <td scope="row">I003</td>
                         <td>Cafe</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
+                        <td>1000</td>
+                        <td>800</td>
                     </tr>
                     <tr>
                         <td scope="row">I004</td>
                         <td>Mocha</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
+                        <td>2000</td>
+                        <td>480</td>
                     </tr>
                     </tbody>
                 </table>
@@ -233,10 +232,10 @@
     </div>
 
 
-    ///////////////////////Order/////////////////////////
-
+<!--    ///////////////////////Order/////////////////////////-->
+    <br>
     <div class="container" id="con4">
-
+        <img src="assests/images/order.jpg" alt="" style="position: absolute; z-index: -10; top: 8vh; left: 55.5vw; opacity: 40%; width: 28vw" id="imgOrder">
     <div class="row" id="orderRow">
         <!--        <div id="frame">-->
         <div class="col col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
@@ -408,11 +407,26 @@
         $("#con3").css("display", "none");
         $("#con4").css("display", "none");
 
+        $(".nav-link").eq(0).css("color" , "black");
+        $(".nav-link").eq(0).css("font-weight" , "bold");
+
         $("#homeSec").on('click' , ()=>{
             $("#con2").css("display", "none");
             $("#con3").css("display", "none");
             $("#con4").css("display", "none");
             $("#con1").css("display", "block");
+
+            $(".nav-link").eq(0).css("color" , "black");
+            $(".nav-link").eq(0).css("font-weight" , "bold");
+
+            $(".nav-link").eq(1).css("color" , "blue");
+            $(".nav-link").eq(1).css("font-weight" , "normal");
+
+            $(".nav-link").eq(2).css("color" , "blue");
+            $(".nav-link").eq(2).css("font-weight" , "normal");
+
+            $(".nav-link").eq(3).css("color" , "blue");
+            $(".nav-link").eq(3).css("font-weight" , "normal");
         });
 
         $("#cusSec").on('click' , ()=>{
@@ -421,6 +435,19 @@
             $("#con4").css("display", "none");
             $("#con2").css("top", "0");
             $("#con2").css("display", "block");
+
+            $(".nav-link").eq(0).css("color" , "blue");
+            $(".nav-link").eq(0).css("font-weight" , "normal");
+
+            $("#cusSec").css("color" , "black");
+            $("#cusSec").css("font-weight" , "bold");
+            $("#cusSec").css("color" , "black");
+
+            $(".nav-link").eq(2).css("color" , "blue");
+            $(".nav-link").eq(2).css("font-weight" , "normal");
+
+            $(".nav-link").eq(3).css("color" , "blue");
+            $(".nav-link").eq(3).css("font-weight" , "normal");
         });
 
         $("#itemSec").on('click' , ()=>{
@@ -429,9 +456,60 @@
             $("#con4").css("display", "none");
             $("#con3").css("top", "0");
             $("#con3").css("display", "block");
+
+            $(".nav-link").eq(0).css("color" , "blue");
+            $(".nav-link").eq(0).css("font-weight" , "normal");
+
+            $(".nav-link").eq(1).css("color" , "blue");
+            $(".nav-link").eq(1).css("font-weight" , "normal");
+
+            $(".nav-link").eq(2).css("color" , "black");
+            $(".nav-link").eq(2).css("font-weight" , "bold");
+
+            $(".nav-link").eq(3).css("color" , "blue");
+            $(".nav-link").eq(3).css("font-weight" , "normal");
         });
 
         $("#orderSec").on('click' , ()=>{
+            $("#con1").css("display", "none");
+            $("#con2").css("display", "none");
+            $("#con3").css("display", "none");
+            $("#con4").css("top", "0");
+            $("#con4").css("display" , "block");
+
+            $(".nav-link").eq(0).css("color" , "blue");
+            $(".nav-link").eq(0).css("font-weight" , "normal");
+
+            $(".nav-link").eq(1).css("color" , "blue");
+            $(".nav-link").eq(1).css("font-weight" , "normal");
+
+            $(".nav-link").eq(2).css("color" , "blue");
+            $(".nav-link").eq(2).css("font-weight" , "normal");
+
+            $(".nav-link").eq(3).css("color" , "black");
+            $(".nav-link").eq(3).css("font-weight" , "bold");
+
+        });
+
+        //////////////////////////////////////////
+
+        $("#btnCus").on('click', ()=>{
+            $("#con1").css("display", "none");
+            $("#con3").css("display", "none");
+            $("#con4").css("display", "none");
+            $("#con2").css("top", "0");
+            $("#con2").css("display", "block");
+        });
+
+        $("#btnItem").on('click', ()=>{
+            $("#con1").css("display", "none");
+            $("#con2").css("display", "none");
+            $("#con4").css("display", "none");
+            $("#con3").css("top", "0");
+            $("#con3").css("display", "block");
+        });
+
+        $("#btnOrder").on('click', ()=>{
             $("#con1").css("display", "none");
             $("#con2").css("display", "none");
             $("#con3").css("display", "none");
@@ -441,9 +519,9 @@
 
 
 
-        /////////////////////////////////////////////////Customer Js/////////////////////////////////////////////////
+        ///////////////////////////////////////////////Customer Js/////////////////////////////////////////////////
 
-        ////////////////////////save//////////////////////////
+        //////////////////////save//////////////////////////
 
         $("#cusBtn>button[type='button']").eq(2).on('click', ()=>{
         // $("#btnSave").on('click', ()=>{
@@ -469,7 +547,7 @@
 
         });
 
-        /////////////////////////////select row//////////////////////////////////
+        ///////////////////////////select row//////////////////////////////////
 
         var row_index;
 
@@ -498,7 +576,7 @@
         });
 
 
-        ////////////////////////update/////////////////////////
+        //////////////////////update/////////////////////////
 
         $("#cusBtn>button[type='button']").eq(1).on("click", ()=> {
             console.log("Update clicked");
@@ -530,9 +608,9 @@
 
 
 
-        /////////////////////////////////////////////Item Js/////////////////////////////////////////////////
+        ///////////////////////////////////////////Item Js/////////////////////////////////////////////////
 
-        //////////////////////save//////////////////////////
+        ////////////////////save//////////////////////////
 
         $("#itemBtn>button[type='button']").eq(2).on('click', ()=>{
             console.log("Save clicked");
@@ -557,7 +635,7 @@
 
         });
 
-        // /////////////////////////////select row//////////////////////////////////
+        /////////////////////////////select row//////////////////////////////////
 
         var row_index;
 
@@ -583,7 +661,7 @@
             $("#qty2").val(qty);
         });
 
-        ////////////////////////update/////////////////////////
+        //////////////////////update/////////////////////////
 
         $("#itemBtn>button[type='button']").eq(1).on("click", ()=> {
             console.log("Update clicked");
@@ -621,7 +699,7 @@
             console.log("Add to cart clicked");
 
             let iCode = $("#iCode").val();
-            let item = $("#item").val();
+            let item = $("#item3").val();
             let price = $("#price3").val();
             let qty = $("#qty3").val();
             let tot = ($("#price3").val())*($("#qty3").val());
