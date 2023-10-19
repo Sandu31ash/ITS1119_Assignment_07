@@ -102,8 +102,22 @@ input{
     opacity: 0;
 }
 
+.water{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 30vw;
+}
+
 @media all and (max-width: 768px){
     #imgCus{
-        opacity: 0;
+        display: none;
+    }
+
+    .water{
+        width: 60vw;
     }
 }

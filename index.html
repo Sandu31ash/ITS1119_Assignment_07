@@ -75,6 +75,7 @@
 
     <div class="container" id="con2">
 
+        <img src="assests/images/watermark.png" alt="" class="water">
 
         <img src="assests/images/cup.png" alt="" style="position: absolute; z-index: -10; top: 45vh; left: 50vw; opacity: 100%" id="imgCus">
 
@@ -119,7 +120,7 @@
                         <th scope="col">Address</th>
                     </tr>
                     </thead>
-                    <tbody id="stu_tBody">
+                    <tbody id="cus_tBody">
                     <tr>
                         <td scope="row">C001</td>
                         <td>Mario</td>
@@ -157,7 +158,9 @@
 
     <div class="container" id="con3">
 
-        <img src="assests/images/item.png" alt="" style="position: absolute; z-index: -10; top: 62vh; left: 55vw; opacity: 100%;">
+        <img src="assests/images/watermark.png" alt="" class="water">
+
+        <img src="assests/images/item.png" alt="" id="imgItem" style="position: absolute; z-index: -10; top: 62vh; left: 55vw; opacity: 100%;">
 
         <div class="row">
             <!--        <div id="frame">-->
@@ -200,7 +203,7 @@
                         <th scope="col">Qty</th>
                     </tr>
                     </thead>
-                    <tbody id="stu_tBody2">
+                    <tbody id="item_tBody">
                     <tr>
                         <td scope="row">I001</td>
                         <td>Latte</td>
@@ -235,7 +238,10 @@
 <!--    ///////////////////////Order/////////////////////////-->
     <br>
     <div class="container" id="con4">
-        <img src="assests/images/order.jpg" alt="" style="position: absolute; z-index: -10; top: 8vh; left: 55.5vw; opacity: 40%; width: 28vw" id="imgOrder">
+
+        <img src="assests/images/watermark.png" alt="" class="water">
+
+        <img src="assests/images/order.jpg" id="imgOrder" alt="" style="position: absolute; z-index: -10; top: 8vh; left: 55.5vw; opacity: 40%; width: 28vw" id="imgOrder">
     <div class="row" id="orderRow">
         <!--        <div id="frame">-->
         <div class="col col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
@@ -342,7 +348,7 @@
             <th scope="col">Tot</th>
         </tr>
         </thead>
-        <tbody id="stu_tBody3">
+        <tbody id="order_tBody">
         <tr>
             <th scope="row">I001</th>
             <td>Latte</td>
@@ -499,6 +505,18 @@
             $("#con4").css("display", "none");
             $("#con2").css("top", "0");
             $("#con2").css("display", "block");
+
+            $(".nav-link").eq(0).css("color" , "blue");
+            $(".nav-link").eq(0).css("font-weight" , "normal");
+
+            $(".nav-link").eq(1).css("color" , "black");
+            $(".nav-link").eq(1).css("font-weight" , "bold");
+
+            $(".nav-link").eq(2).css("color" , "blue");
+            $(".nav-link").eq(2).css("font-weight" , "normal");
+
+            $(".nav-link").eq(3).css("color" , "blue");
+            $(".nav-link").eq(3).css("font-weight" , "normal");
         });
 
         $("#btnItem").on('click', ()=>{
@@ -507,6 +525,18 @@
             $("#con4").css("display", "none");
             $("#con3").css("top", "0");
             $("#con3").css("display", "block");
+
+            $(".nav-link").eq(0).css("color" , "blue");
+            $(".nav-link").eq(0).css("font-weight" , "normal");
+
+            $(".nav-link").eq(1).css("color" , "blue");
+            $(".nav-link").eq(1).css("font-weight" , "normal");
+
+            $(".nav-link").eq(2).css("color" , "black");
+            $(".nav-link").eq(2).css("font-weight" , "bold");
+
+            $(".nav-link").eq(3).css("color" , "blue");
+            $(".nav-link").eq(3).css("font-weight" , "normal");
         });
 
         $("#btnOrder").on('click', ()=>{
@@ -515,6 +545,18 @@
             $("#con3").css("display", "none");
             $("#con4").css("top", "0");
             $("#con4").css("display" , "block");
+
+            $(".nav-link").eq(0).css("color" , "blue");
+            $(".nav-link").eq(0).css("font-weight" , "normal");
+
+            $(".nav-link").eq(1).css("color" , "blue");
+            $(".nav-link").eq(1).css("font-weight" , "normal");
+
+            $(".nav-link").eq(2).css("color" , "blue");
+            $(".nav-link").eq(2).css("font-weight" , "normal");
+
+            $(".nav-link").eq(3).css("color" , "black");
+            $(".nav-link").eq(3).css("font-weight" , "bold");
         });
 
 
@@ -534,7 +576,7 @@
 
             console.log(`CusID : ${cus_id}\n Name: ${name}\n Contact: ${contact} Address: ${address}\n`);
 
-            $("#stu_tBody").append("<tr>\n" +
+            $("#cus_tBody").append("<tr>\n" +
                 "<td class='cus_id1' scope=\"row\">" + cus_id + "</td>" +
                 "<td class='name1'>" + name + "</td>" +
                 "<td class='contact1'>" + contact + "</td>" +
@@ -558,7 +600,7 @@
             $("#address").val("");
         }
 
-        $("#stu_tBody").on("click" , "tr", function () {        //event dedication --> catches the runtime tr
+        $("#cus_tBody").on("click" , "tr", function () {        //event dedication --> catches the runtime tr
 
             console.log("Row selected");
 
@@ -588,7 +630,7 @@
 
             let record = `<td class= "cus_id1">${cus_id}</td><td class="name1">${name}</td><td class="contact1">${contact}</td><td className="address1">${address}</td>`;
 
-            $("#stu_tBody>tr").eq(row_index).html(record);
+            $("#cus_tBody>tr").eq(row_index).html(record);
 
 
             //clear
@@ -599,7 +641,7 @@
         //delete
         $("#cusBtn>button[type='button']").eq(0).on("click", ()=> {
             console.log("Delete clicked");
-            $("#stu_tBody>tr").eq(row_index).remove();
+            $("#cus_tBody>tr").eq(row_index).remove();
         });
 
 
@@ -622,7 +664,7 @@
 
             console.log(`Code : ${code}\n Item: ${item}\n Price: ${price} Qty: ${qty}\n`);
 
-            $("#stu_tBody2").append("<tr>\n" +
+            $("#item_tBody").append("<tr>\n" +
                 "<td class='code1' scope=\"row\">" + code + "</td>" +
                 "<td class='item1'>" + item + "</td>" +
                 "<td class='price1'>" + price + "</td>" +
@@ -646,7 +688,7 @@
             $("#qty2").val("");
         }
 
-        $("#stu_tBody2").on("click" , "tr", function () {        //event dedication --> catches the runtime tr
+        $("#item_tBody").on("click" , "tr", function () {        //event dedication --> catches the runtime tr
 
             row_index = $(this).index();
 
@@ -673,7 +715,7 @@
 
             let record = `<td class= "code1">${code}</td><td class="item1">${item}</td><td class="price1">${price}</td><td className="qty1">${qty}</td>`;
 
-            $("#stu_tBody2>tr").eq(row_index).html(record);
+            $("#item_tBody>tr").eq(row_index).html(record);
 
 
             //clear
@@ -684,7 +726,7 @@
         //delete
         $("#itemBtn>button[type='button']").eq(0).on("click", ()=> {
             console.log("Delete clicked");
-            $("#stu_tBody2>tr").eq(row_index).remove();
+            $("#item_tBody>tr").eq(row_index).remove();
         });
 
 
@@ -706,7 +748,7 @@
 
             console.log(`Item code : ${iCode}\n item: ${item}\n Unit price: ${price} Qty: ${qty}\n Unit price: ${price} Tot: ${tot}`);
 
-            $("#stu_tBody3").append("<tr>\n" +
+            $("#order_tBody").append("<tr>\n" +
                 "<td class='icode1' scope=\"row\">" + iCode + "</td>" +
                 "<td class='item1'>" + item + "</td>" +
                 "<td class='price1'>" + price + "</td>" +

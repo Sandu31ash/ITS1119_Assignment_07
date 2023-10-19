@@ -92,8 +92,11 @@ label{
     background-color: transparent;
 }
 
-
-
+@media all and (max-width: 768px){
+    #imgItem{
+        display: none;
+    }
+}
 
 
 
